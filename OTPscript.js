@@ -1,6 +1,6 @@
 window.load = (function() {
 	var card = prompt("Enter card ID");
-	cardID = card.replace(/-/g, "");
+	cardID = card
 	var code = prompt("Enter code needed");
 
 	if (cardID && code) {
@@ -48,7 +48,7 @@ function getNemIDcode(cardID, number) {
 
 	xhttp.open(
 		"GET",
-		"https://appletk.danid.dk/developers/OtpCard?CardSerial=" + cardID,
+		"https://otp-nemid.sdc.dk/simulator/listotpcards?serialnumber=" + cardID,
 		true
 	);
 	xhttp.send();
