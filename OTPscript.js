@@ -16,7 +16,7 @@ window.load = (function() {
 
 function gotoNemId(cardID) {
 	window.open(
-		"https://appletk.danid.dk/developers/OtpCard?CardSerial=" + cardID,
+		"https://otp-nemid.sdc.dk/simulator/listotpcards?serialnumber=" + cardID,
 		"_blank"
 	);
 }
